@@ -15,6 +15,9 @@
     "source": "https://github.com/dfwood/wp-multiple-roles"
   },
   "autoload": {
+    "files": [
+      "bootstrap.php"
+    ],
     "psr-4": {
       "dfwood\\WordPress\\": ""
     }
