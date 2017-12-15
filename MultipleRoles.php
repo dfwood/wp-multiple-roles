@@ -58,7 +58,7 @@ class MultipleRoles {
 		) {
 			$addRole = filter_input( INPUT_GET, stripslashes( __CLASS__ ) . '-add-role', FILTER_SANITIZE_STRING );
 			$removeRole = filter_input( INPUT_GET, stripslashes( __CLASS__ ) . '-remove-role', FILTER_SANITIZE_STRING );
-			$userIds = array_filter( filter_input( INPUT_GET, 'users', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY ), 'absint' );
+			$userIds = array_map( 'absint', filter_input( INPUT_GET, 'users', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY ) );
 
 			if ( ! empty( $userIds ) && ( ! empty( $addRole ) || ! empty( $removeRole ) ) ) {
 				// Loop through all selected users and verify current user can edit them.
