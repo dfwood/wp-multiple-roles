@@ -1,7 +1,7 @@
 {
   "name": "dfwood/wp-multiple-roles",
   "description": "A library that allows assigning multiple roles to a single user in WordPress.",
-  "license": "GPLv3",
+  "license": "GPL-3.0+",
   "type": "library",
   "homepage": "https://github.com/dfwood/wp-multiple-roles",
   "authors": [
